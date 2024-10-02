@@ -1,0 +1,28 @@
+<div class="container">
+<h1>{{ title }}</h1>
+
+<div id="calculator" class="calculator">
+  <button id="clear" class="clear" (click)="handleClearClick()">C</button>
+  <div id="viewer" class="viewer">0</div>
+
+  <button class="num" (click)="handleNumClick('1')">1</button>
+  <button class="num" (click)="handleNumClick('2')">2</button>
+  <button class="num" (click)="handleNumClick('3')">3</button>
+  <button class="ops" (click)="handleOperatorClick('plus')">+</button>
+
+  <button class="num" (click)="handleNumClick('4')">4</button>
+  <button class="num" (click)="handleNumClick('5')">5</button>
+  <button class="num" (click)="handleNumClick('6')">6</button>
+  <button class="ops" (click)="handleOperatorClick('minus')">-</button>
+
+  <button class="num" (click)="handleNumClick('7')">7</button>
+  <button class="num" (click)="handleNumClick('8')">8</button>
+  <button class="num" (click)="handleNumClick('9')">9</button>
+  <button class="ops" (click)="handleOperatorClick('times')">*</button>
+
+  <button class="num" (click)="handleNumClick('0')">0</button>
+  <button class="num" (click)="handleNumClick('.')">.</button>
+  <button id="equals" class="equals" (click)="handleEqualsClick()">=</button>
+  <button class="ops" (click)="handleOperatorClick('divided by')">/</button>
+</div>
+</div>
